@@ -12,4 +12,7 @@ testing
   <li>
     <a href="lab02/index.html">Lab 02</a>
   </li>
+  <li>
+    <a href="lab03/index.html">Lab 03</a>
+  </li>
 </ul>
