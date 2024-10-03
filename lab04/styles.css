@@ -17,16 +17,15 @@ main {
 main nav {
     background-color: slateblue;
     border: solid 2px darkslateblue;
-    text-align: center;
 }
 main nav ul {
     list-style: none;
-    margin: auto;
+    margin: 0;
     padding: 0;
     display: flex;
 }
 main nav ul li {
-    margin: 0 10.50px;
+    margin: 0 auto;
 }
 main nav ul li a {
     padding: 0 .9em;
