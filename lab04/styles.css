@@ -1,0 +1,134 @@
+body {
+    background-color: lightcyan;
+    background-image: url("images/catgib200.png");
+    font-family: Rockwell;
+}
+
+main {
+    width: 70%;
+    max-width: 640px;
+    min-width: 550px;
+    padding: 1em;
+    margin: auto;
+    background-color: rgba(132, 203, 236, 0.911);
+    border: solid darkcyan 5px;
+    color: rgb(6, 64, 71);
+}
+main nav {
+    background-color: slateblue;
+    border: solid 2px darkslateblue;
+    text-align: center;
+}
+main nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+main nav ul li {
+    margin: 0 10.50px;
+}
+main nav ul li a {
+    padding: 0 .9em;
+    color: rgb(225, 200, 240);
+    text-decoration: none;
+}
+article {
+    padding: 2em .5em;
+}
+article h2 {
+    background-color: darkslateblue;
+    border-left: none;
+    color: rgb(182, 176, 221);
+    text-align: center;
+    border-bottom: dashed darkcyan 2px;
+    border-top: dashed darkcyan 2px;
+}
+article header h2 {
+    color: rgb(5, 78, 78);
+    background-color: lightblue;
+    padding-left: 5px;
+    border-left: 10px solid darkcyan;
+    border-top: none;
+    border-bottom: solid 2px darkcyan;
+}
+section {
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    padding: 5mm;
+    margin-bottom: 10px;
+}
+main article section div {
+    margin-top: 1.5em;
+}
+h1 {
+    font-size: 45px;
+    border-bottom: 10px dotted darkcyan;
+    margin: .2em;
+}
+
+h3 {
+    text-indent: 10px;
+    border-bottom: solid 2px;
+    color: darkslateblue;
+}
+main article section div h4 {
+    text-align: center;
+    margin: 0%;
+    padding: 0;
+    text-decoration: underline;
+    font-size: large;
+}
+main article a {
+    text-decoration: none;
+}
+main article a:link, main article a:visited{
+    background-color:  darkslateblue;
+    color: lightcyan;
+    padding: 5px 5px;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+main article a:hover, main article a:active {
+    color: rgb(194, 135, 250);
+    background-color: rgb(52, 44, 102);
+}
+.reslinks li {
+    padding: 10px;
+}
+p {
+    text-indent: 10px;
+}
+main article section div p {
+    text-align: center;
+    margin: 0;
+    font-size: 88%;
+}
+img {
+    padding: .5em;
+    margin: auto;
+    display: block;
+}
+footer {
+    color: rgb(52, 85, 100);
+    text-align: center;
+}
+.endof {
+    font-size: small;
+    text-align: right;
+}
+#webheader {
+    padding: 0 .2em;
+    text-align: center;
+}
+section dl {
+     background-color: lightblue; 
+     padding: 10px;
+     border: 1px dotted blue;
+     color: rgb(16, 72, 104);
+}
+main footer a {
+    background: none;
+    color: black;
+    border: none;
+}
