@@ -1,7 +1,7 @@
 body {
     background-color: lightcyan;
     background-image: url("images/catgib200.png");
-    font-family: Rockwell;
+    font-family: "Architects Daughter", sans-serif;
 }
 
 main {
@@ -10,9 +10,9 @@ main {
     min-width: 550px;
     padding: 1em;
     margin: auto;
-    background-color: rgba(132, 203, 236, 0.911);
+    background-color: rgba(132, 203, 236, 0.945);
     border: solid darkcyan 5px;
-    color: rgb(6, 64, 71);
+    color: rgb(4, 48, 53);
 }
 main nav {
     background-color: slateblue;
@@ -32,6 +32,34 @@ main nav ul li a {
     color: rgb(225, 200, 240);
     text-decoration: none;
 }
+.dropdown {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display:inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkslateblue;
+    text-align: left;
+    min-width: 120px;
+    border: solid .1em rgb(54, 46, 110);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.562);
+    z-index: 1;
+}
+.dropdown-content li {
+    margin: .2em 0;
+}
+.dropdown-content li a{
+    text-decoration: underline;
+}
+.dropdown-content a:hover {
+    background-color: rgb(51, 43, 105);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 article {
     padding: 2em .5em;
 }
@@ -43,7 +71,7 @@ article h2 {
     border-bottom: dashed darkcyan 2px;
     border-top: dashed darkcyan 2px;
 }
-article header h2 {
+article section header h2 {
     color: rgb(5, 78, 78);
     background-color: lightblue;
     padding-left: 5px;
@@ -109,11 +137,10 @@ img {
     display: block;
 }
 footer {
-    color: rgb(52, 85, 100);
+    color: rgb(29, 63, 78);
     text-align: center;
 }
 .endof {
-    font-size: small;
     text-align: right;
 }
 #webheader {
@@ -130,4 +157,14 @@ main footer a {
     background: none;
     color: black;
     border: none;
+}
+#pleaseRead {
+    background-color: rgb(175, 47, 47);
+    color: white;
+    padding: 0 .2em;
+    margin: .2em .4em;
+    text-align: center;
+    font-size: large;
+    text-decoration: underline;
+    border: solid .3em darkred;
 }
