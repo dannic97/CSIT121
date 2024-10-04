@@ -7,15 +7,15 @@ testing
 
 <ul>
   <li>
-    <a href="lab01/aboutme.html">Lab 01</a>
+    <a href="lab01/aboutme.html" target="_blank">Lab 01</a>
   </li>
   <li>
-    <a href="lab02/index.html">Lab 02</a>
+    <a href="lab02/index.html" target="_blank">Lab 02</a>
   </li>
   <li>
-    <a href="lab03/index.html">Lab 03</a>
+    <a href="lab03/index.html" target="_blank">Lab 03</a>
   </li>
   <li>
-    <a href="lab04/index.html">Lab04</a>
+    <a href="lab04/index.html" target="_blank">Lab04</a>
   </li>
 </ul>
