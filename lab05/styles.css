@@ -1,0 +1,235 @@
+body {
+    background-color: rgb(178, 173, 197);
+    font-family: Caveat ,Rockwell;
+    background-image: url("images/redcapShroom300.png"), url("images/purplecapShroom300.png"), linear-gradient(rgba(192, 248, 255, 0.74), rgba(86, 20, 161, 0.76));
+    background-repeat: repeat-y, repeat-y;
+    background-position: center left, center right;
+    font-size: 150%;
+}
+.page {
+    margin: auto;
+    width: 75%;
+    max-width: 800px;
+    min-width: 400px;
+    padding: 1em;
+    background-color: rgba(173, 183, 218, 0.877);
+}
+.page header {
+    margin: 0;
+    padding: 0;
+}
+.page header h1 {
+    font-size: 45px;
+    border-bottom: 10px dotted darkcyan;
+}
+.page #menu {
+    margin: 0;
+    padding: 0;
+    border: solid 3px darkslateblue;
+    background-color: rgb(82, 72, 141);
+}
+.page #menu #menu-content{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.page #menu #menu-content li {
+   margin: auto;
+}
+.page #menu #menu-content li a {
+   color: rgb(207, 199, 255);
+   text-decoration: none;
+   padding: 0 .9em;
+}
+#menu-content a:hover, a:active {
+    background-color: rgb(45, 38, 88);
+}
+.page main article h2 {
+    background-color:  rgb(82, 72, 141);
+    border-left: none;
+    color: rgb(182, 176, 221);
+    text-align: center;
+    padding: 10px 0;
+}
+.page main article section {
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    padding: 5mm;
+    margin-bottom: 10px;
+}
+.page main article section h2 {
+    color: rgb(5, 78, 78);
+    background-color: lightblue;
+    padding: 0 5px;
+    border-left: 10px solid darkcyan;
+}
+.page main article section h3 {
+    text-indent: 10px;
+    border-bottom: solid 2px;
+    color: darkslateblue;
+}
+.page main article section .reslinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.page main article section ul li a:link, a:visited{
+    background-color:  darkslateblue;
+    color: lightcyan;
+    padding: 5px 5px;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+.page main article section ul li a:hover, a:active {
+    color: rgb(194, 135, 250);
+    background-color: rgb(52, 44, 102);
+}
+.reslinks li {
+    padding: 10px;
+}
+p {
+    text-indent: 10px;
+}
+footer {
+    color: rgb(119, 88, 139);
+    text-align: center;
+}
+.endof p {
+    color: rgb(119, 88, 139);
+    font-size: 75%;
+    text-align: right;
+}
+.endof a {
+    color:blueviolet;
+    font-size: 75%;
+}
+#lab02dl {
+     background-color: rgb(155, 151, 219); 
+     padding: 10px;
+     border: 1px dotted rgb(150, 31, 15);
+     color: rgb(22, 16, 104);
+}
+#email {
+    background: none;
+    color: black;
+    border: none;
+    font-size:90%;
+}
+@media (max-width: 600px) {
+    .page {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .page #pageTop {
+        background-color: rgba(173, 183, 218, 0.877);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .page header h1{
+        font-size: 60px;
+    }
+    .page #menu {
+        margin: auto;
+        border: solid 4px darkslateblue;
+    }
+    .page #menu #menu-content {
+        display: flex;
+        flex-direction: column;
+    } 
+    .page #menu #menu-content li {
+        margin: 0;
+        padding: .7em 0;
+        border-bottom: solid 3px darkslateblue;
+    }
+    .page #menu #menu-content li a {
+        margin: auto;
+        padding: .7em;
+    }
+    .page main article section {
+        background-color: rgba(173, 183, 218, 0.877);
+    }
+    .page main article section header h2 {
+        border-right: solid 10px darkcyan;
+    }
+    .page main article section dl {
+        text-align: left;
+    }
+    .page footer {
+        color: rgb(233, 204, 241);
+    }
+    .page footer #email {
+        color: rgb(212, 160, 169);
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .page {
+        text-align: center;
+    }
+    .page header h1{
+        font-size: 60px;
+    }
+    .page #menu {
+        margin: auto;
+        background-color: darkslateblue;
+    }
+    .page #menu #menu-content li {
+        border-right: solid 2px darkslateblue;
+        border-left: solid 2px darkslateblue;
+        background-color:  rgb(82, 72, 141);
+        padding: 10px;
+    }
+    .page #menu #menu-content li a {
+        margin: auto;
+        padding: .7em;
+    }
+    .page main article section header h2 {
+        border-right: solid 10px darkcyan;
+    }
+    .page main article section dl {
+        text-align: left;
+    }
+}
+@media (min-width: 1025px){
+    .page {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+       grid-template-rows: auto 1fr auto;
+       grid-template-columns: 1fr 3fr;
+       grid-template-areas: "header header" "menu main" "footer footer";
+    }
+    .page header {
+        grid-area: header;
+    }
+    .page #menu {
+        grid-area: menu;
+        background-color: rgb(82, 72, 141);
+    }
+    .page #menu #menu-content {
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid darkslateblue 4px;
+    }
+    .page #menu #menu-content li {
+        margin: 0;
+        padding: .7em 0;
+        border-bottom: solid 3px darkslateblue;
+    }
+    .page main {
+        grid-area: main;
+        margin: 0 20px;
+    }
+    .page main article h2 {
+        margin: 0 0 20px 0;
+    }
+    .page footer {
+        grid-area: footer;
+        margin: 20px
+    }
+}
+
