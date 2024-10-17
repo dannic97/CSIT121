@@ -20,6 +20,6 @@ testing
   </li>
   
   <li>
-    <a href="lab05/index.html" target="_blank">Lab04</a>
+    <a href="lab05/index.html" target="_blank">Lab05</a>
   </li>
 </ul>
