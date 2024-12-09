@@ -25,4 +25,7 @@ testing
   <li>
     <a href="lab06/index.html" target="_blank">Lab06</a>  
   </li>
+  <li>
+    <a href="finalProject/index.html" target="_blank">Final Project</a>
+  </li>
 </ul>
