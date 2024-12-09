@@ -16,9 +16,8 @@
         <nav id="navbar">
             <ul id="navlist">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="labs.html">Labs</a></li>
-                <li><a href="design.html">Designs</a></li>
-                <li><a href="aboutme.html">File Structures</a></li>
+                <li><a href="mylabs.html">My Labs</a></li>
+                <li><a href="table.html">Favourite Sharks</a></li>
             </ul>
         </nav>
         <article id="aboutme">
@@ -84,20 +83,20 @@
     </main>
     <script>
         document.getElementById('contactform').addEventListener('submit', function(event) {
-            event.preventDefault(); //prevent form default action so script can complete it.
+            event.preventDefault();
+
             const fname = document.getElementById('fname').value;
             const midinit = document.getElementById('midinit').value;
             const lname = document.getElementById('lname').value;
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
-            //create full name string
             const fullname = `${fname} ${midinit} ${lname}`;
-            //create data string
-            const data = `Name: ${fullname}\nEmail: ${email}\nPhone Number: ${phone}`;
-            //create and download text file from browser.
-            const blob = new Blob([data], {type: 'text/plain'});
+
+            const data = `Name: ${fullname}\nEmail: ${email}\nPhone: ${phone}`;
+
+            const blob = new Blob([data], { type: 'text/plain' });
             const url = URL.createObjectURL(blob);
-            const a = document.getElement('a');
+            const a = document.createElement('a');
             a.href = url;
             a.download = 'form-data-from-' + fname + '.txt';
             a.click();
